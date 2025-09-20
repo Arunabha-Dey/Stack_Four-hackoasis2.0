@@ -31,6 +31,7 @@ import {
   Share,
   Upload,
   LogOut,
+  ExternalLink,
 } from "lucide-react"
 import { useState } from "react"
 
@@ -65,6 +66,15 @@ export default function PatientDashboard() {
             </div>
 
             <div className="flex items-center space-x-3">
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => window.open('https://hss-3z.vercel.app', '_blank')}
+                className="border-chart-3 text-chart-3 hover:bg-chart-3/10"
+              >
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Hind Svasth Seva
+              </Button>
               <Button variant="ghost" size="sm" className="relative">
                 <Bell className="w-4 h-4" />
                 <span className="absolute -top-1 -right-1 w-2 h-2 bg-primary rounded-full pulse-glow" />
@@ -203,6 +213,33 @@ export default function PatientDashboard() {
                 </CardContent>
               </Card>
             </div>
+
+            {/* Hind Svasth Seva Integration */}
+            <Card className="bg-card/50 backdrop-blur-sm border-border/50">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <ExternalLink className="w-5 h-5 text-chart-3" />
+                  Hind Svasth Seva Integration
+                </CardTitle>
+                <CardDescription>
+                  Access comprehensive healthcare services through our partner platform
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Button 
+                  size="lg" 
+                  variant="outline"
+                  onClick={() => window.open('https://hss-3z.vercel.app', '_blank')}
+                  className="w-full border-chart-3 text-chart-3 hover:bg-chart-3/10"
+                >
+                  <ExternalLink className="w-5 h-5 mr-2" />
+                  Visit Hind Svasth Seva
+                </Button>
+                <p className="text-sm text-muted-foreground mt-3 text-center">
+                  Connect with healthcare providers, book appointments, and access medical services
+                </p>
+              </CardContent>
+            </Card>
 
             {/* Recent Activity */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

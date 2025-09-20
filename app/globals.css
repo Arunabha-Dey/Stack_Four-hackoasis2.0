@@ -4,81 +4,81 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Updated to vascular-inspired color scheme with blood red and neon blue */
-  --background: oklch(0.05 0.02 270); /* Deep dark blue-black */
-  --foreground: oklch(0.95 0.01 0); /* Near white */
-  --card: oklch(0.08 0.03 270); /* Slightly lighter dark blue */
-  --card-foreground: oklch(0.95 0.01 0);
-  --popover: oklch(0.08 0.03 270);
-  --popover-foreground: oklch(0.95 0.01 0);
-  --primary: oklch(0.65 0.25 15); /* Blood red */
-  --primary-foreground: oklch(0.95 0.01 0);
-  --secondary: oklch(0.15 0.05 270); /* Dark blue accent */
-  --secondary-foreground: oklch(0.95 0.01 0);
-  --muted: oklch(0.12 0.04 270);
-  --muted-foreground: oklch(0.65 0.02 270);
-  --accent: oklch(0.7 0.3 240); /* Neon blue */
-  --accent-foreground: oklch(0.05 0.02 270);
-  --destructive: oklch(0.6 0.3 15); /* Darker blood red */
-  --destructive-foreground: oklch(0.95 0.01 0);
-  --border: oklch(0.2 0.05 270);
-  --input: oklch(0.12 0.04 270);
-  --ring: oklch(0.65 0.25 15);
-  --chart-1: oklch(0.65 0.25 15); /* Blood red */
-  --chart-2: oklch(0.7 0.3 240); /* Neon blue */
-  --chart-3: oklch(0.8 0.35 15); /* Neon red */
-  --chart-4: oklch(0.5 0.2 240); /* Dark blue */
-  --chart-5: oklch(0.75 0.3 220); /* Light neon blue */
+  /* Updated to white and light blue color scheme with neon text */
+  --background: oklch(0.98 0.01 240); /* Light blue-white */
+  --foreground: oklch(0.8 0.4 180); /* Neon cyan */
+  --card: oklch(1 0 0); /* Pure white */
+  --card-foreground: oklch(0.8 0.4 180); /* Neon cyan */
+  --popover: oklch(1 0 0); /* Pure white */
+  --popover-foreground: oklch(0.8 0.4 180); /* Neon cyan */
+  --primary: oklch(0.65 0.15 220); /* Light blue */
+  --primary-foreground: oklch(1 0 0); /* White */
+  --secondary: oklch(0.9 0.05 220); /* Light blue accent */
+  --secondary-foreground: oklch(0.7 0.5 200); /* Neon blue */
+  --muted: oklch(0.95 0.02 220); /* Very light blue */
+  --muted-foreground: oklch(0.2 0.02 240); /* Dark gray/black */
+  --accent: oklch(0.75 0.1 220); /* Medium light blue */
+  --accent-foreground: oklch(0.8 0.4 300); /* Neon purple */
+  --destructive: oklch(0.6 0.2 15); /* Soft red */
+  --destructive-foreground: oklch(0.9 0.6 30); /* Neon orange */
+  --border: oklch(0.85 0.05 220); /* Light blue border */
+  --input: oklch(0.95 0.02 220); /* Very light blue */
+  --ring: oklch(0.65 0.15 220); /* Light blue */
+  --chart-1: oklch(0.65 0.15 220); /* Light blue */
+  --chart-2: oklch(0.75 0.1 220); /* Medium light blue */
+  --chart-3: oklch(0.85 0.05 220); /* Lighter blue */
+  --chart-4: oklch(0.55 0.12 220); /* Medium blue */
+  --chart-5: oklch(0.9 0.03 220); /* Very light blue */
   --radius: 0.75rem;
-  --sidebar: oklch(0.08 0.03 270);
-  --sidebar-foreground: oklch(0.95 0.01 0);
-  --sidebar-primary: oklch(0.65 0.25 15);
-  --sidebar-primary-foreground: oklch(0.95 0.01 0);
-  --sidebar-accent: oklch(0.15 0.05 270);
-  --sidebar-accent-foreground: oklch(0.95 0.01 0);
-  --sidebar-border: oklch(0.2 0.05 270);
-  --sidebar-ring: oklch(0.65 0.25 15);
+  --sidebar: oklch(1 0 0); /* White */
+  --sidebar-foreground: oklch(0.8 0.4 180); /* Neon cyan */
+  --sidebar-primary: oklch(0.65 0.15 220); /* Light blue */
+  --sidebar-primary-foreground: oklch(1 0 0); /* White */
+  --sidebar-accent: oklch(0.9 0.05 220); /* Light blue accent */
+  --sidebar-accent-foreground: oklch(0.7 0.5 200); /* Neon blue */
+  --sidebar-border: oklch(0.85 0.05 220); /* Light blue border */
+  --sidebar-ring: oklch(0.65 0.15 220); /* Light blue */
 
-  /* Added custom vascular flow colors */
-  --vascular-artery: oklch(0.65 0.25 15); /* Blood red for arteries */
-  --vascular-vein: oklch(0.7 0.3 240); /* Neon blue for veins */
-  --vascular-flow: oklch(0.8 0.35 15); /* Neon red for active flow */
-  --vascular-pulse: oklch(0.75 0.3 220); /* Light neon blue for pulse */
+  /* Updated custom colors for light theme */
+  --vascular-artery: oklch(0.65 0.15 220); /* Light blue for primary elements */
+  --vascular-vein: oklch(0.75 0.1 220); /* Medium light blue for secondary */
+  --vascular-flow: oklch(0.85 0.05 220); /* Lighter blue for flow effects */
+  --vascular-pulse: oklch(0.9 0.03 220); /* Very light blue for pulse */
 }
 
 .dark {
-  --background: oklch(0.03 0.02 270);
-  --foreground: oklch(0.98 0.01 0);
-  --card: oklch(0.06 0.03 270);
-  --card-foreground: oklch(0.98 0.01 0);
-  --popover: oklch(0.06 0.03 270);
-  --popover-foreground: oklch(0.98 0.01 0);
-  --primary: oklch(0.7 0.3 15);
-  --primary-foreground: oklch(0.03 0.02 270);
-  --secondary: oklch(0.12 0.05 270);
-  --secondary-foreground: oklch(0.98 0.01 0);
-  --muted: oklch(0.1 0.04 270);
-  --muted-foreground: oklch(0.7 0.02 270);
-  --accent: oklch(0.75 0.35 240);
-  --accent-foreground: oklch(0.03 0.02 270);
-  --destructive: oklch(0.65 0.35 15);
-  --destructive-foreground: oklch(0.98 0.01 0);
-  --border: oklch(0.18 0.05 270);
-  --input: oklch(0.1 0.04 270);
-  --ring: oklch(0.7 0.3 15);
-  --chart-1: oklch(0.7 0.3 15);
-  --chart-2: oklch(0.75 0.35 240);
-  --chart-3: oklch(0.85 0.4 15);
-  --chart-4: oklch(0.45 0.2 240);
-  --chart-5: oklch(0.8 0.35 220);
-  --sidebar: oklch(0.06 0.03 270);
-  --sidebar-foreground: oklch(0.98 0.01 0);
-  --sidebar-primary: oklch(0.7 0.3 15);
-  --sidebar-primary-foreground: oklch(0.98 0.01 0);
-  --sidebar-accent: oklch(0.12 0.05 270);
-  --sidebar-accent-foreground: oklch(0.98 0.01 0);
-  --sidebar-border: oklch(0.18 0.05 270);
-  --sidebar-ring: oklch(0.7 0.3 15);
+  --background: oklch(0.15 0.03 220); /* Dark blue-gray */
+  --foreground: oklch(0.8 0.5 180); /* Neon cyan */
+  --card: oklch(0.2 0.04 220); /* Card dark blue */
+  --card-foreground: oklch(0.8 0.5 180); /* Neon cyan */
+  --popover: oklch(0.2 0.04 220);
+  --popover-foreground: oklch(0.8 0.5 180); /* Neon cyan */
+  --primary: oklch(0.6 0.15 220); /* Medium light blue */
+  --primary-foreground: oklch(1 0 0); /* White */
+  --secondary: oklch(0.25 0.05 220); /* Darker blue */
+  --secondary-foreground: oklch(0.7 0.6 200); /* Bright neon blue */
+  --muted: oklch(0.3 0.04 220); /* Muted dark blue */
+  --muted-foreground: oklch(0.7 0.03 220); /* Light gray */
+  --accent: oklch(0.5 0.12 220); /* Blue accent */
+  --accent-foreground: oklch(0.85 0.6 300); /* Bright neon purple */
+  --destructive: oklch(0.55 0.2 15); /* Softer red for dark mode */
+  --destructive-foreground: oklch(0.95 0.7 30); /* Bright neon orange */
+  --border: oklch(0.3 0.05 220); /* Blue border */
+  --input: oklch(0.25 0.04 220); /* Input dark blue */
+  --ring: oklch(0.6 0.15 220); /* Medium light blue */
+  --chart-1: oklch(0.6 0.15 220); /* Medium light blue */
+  --chart-2: oklch(0.5 0.12 220); /* Blue accent */
+  --chart-3: oklch(0.7 0.1 220); /* Lighter blue */
+  --chart-4: oklch(0.4 0.15 220); /* Darker blue */
+  --chart-5: oklch(0.75 0.08 220); /* Light blue */
+  --sidebar: oklch(0.2 0.04 220); /* Dark blue sidebar */
+  --sidebar-foreground: oklch(0.8 0.5 180); /* Bright neon cyan */
+  --sidebar-primary: oklch(0.6 0.15 220); /* Medium light blue */
+  --sidebar-primary-foreground: oklch(1 0 0); /* White */
+  --sidebar-accent: oklch(0.25 0.05 220); /* Darker blue */
+  --sidebar-accent-foreground: oklch(0.7 0.6 200); /* Bright neon blue */
+  --sidebar-border: oklch(0.3 0.05 220); /* Blue border */
+  --sidebar-ring: oklch(0.6 0.15 220); /* Medium light blue */
 }
 
 @theme inline {

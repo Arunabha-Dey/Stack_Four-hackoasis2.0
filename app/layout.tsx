@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { Suspense } from "react"
 import "./globals.css"
 import { AuthProvider } from "@/lib/auth/auth-context"
+import { HealthChatbot } from "@/components/chatbot/health-chatbot"
 
 export const metadata: Metadata = {
   title: "Stack Four - Blockchain Health Records",
@@ -24,6 +25,7 @@ export default function RootLayout({
         <AuthProvider>
           <Suspense fallback={null}>{children}</Suspense>
         </AuthProvider>
+        <HealthChatbot />
         <Analytics />
       </body>
     </html>
